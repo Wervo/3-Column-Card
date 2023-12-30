@@ -1,0 +1,104 @@
+.container{
+    justify-content: center;
+    grid-template-columns: repeat (3,1fr);
+    height:450px;
+    font-size: 15px;
+    display:flex;
+    
+}
+
+
+.SEDANS{
+    background: hsl(31, 77%, 52%);
+    width:200px;
+    padding:70px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.SUVS{
+    background:hsl(184, 100%, 22%);
+    width:200px;
+    padding:70px;
+    margin-top:0;
+}
+
+.LUXURY{
+    background:hsl(179, 100%, 13%);
+    width:200px;
+    padding:70px;
+    border-radius: 0px 10px 10px 0px;
+    margin-top:0;
+}
+
+.SEDANS img, .SUVS img, .LUXURY img{
+    transform: translateY(-25px);
+}
+
+
+.container p a,
+.container h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container h1{
+    transform: translateY(-20px);
+    font-family: 'Big Shoulders Display', sans-serif;
+    color:white;
+    font-size: 35px;
+}
+
+a{
+    background: white;
+    transform: translateY(60px);
+    display: block;
+    width:140px;
+    height:45px;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 20px;
+    transition: all 300ms ease-in-out;
+}
+
+.container p{
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.SEDANS a{
+    color:hsl(31, 77%, 52%);
+    text-decoration: none;
+}
+
+.SUVS a{
+    color:hsl(184, 100%, 22%);
+    text-decoration: none;
+}
+
+.LUXURY a{
+    color:hsl(179, 100%, 13%);
+    text-decoration: none;
+}
+
+.container a:hover{
+    background:transparent;
+    color:white;
+    border: 2px solid;
+}
+
+@media (max-width:840px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .SEDANS,
+    .SUVS,
+    .LUXURY {
+        width: calc(33.33% - 20px);
+        margin-bottom: 20px; 
+    }
+}
+
+
+
